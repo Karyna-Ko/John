@@ -1,0 +1,54 @@
+.blog {
+    .header .menu__link {
+        .active {
+            color: $primary-color;
+        }
+    }
+    &__body {
+        border-bottom: 1px solid #E0E0E0;
+        padding: 30px 0 30px;
+        margin-top: 20px;
+    }
+
+    &__info {
+        display: inline-flex;
+        span {
+            margin: 0 20px;
+        }
+        @media(max-width:400px) {
+            flex-wrap: wrap;
+        }
+    }
+
+    &__date {
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 29/20*100%;
+    }
+    .title_fz30 {
+        font-weight: 500;
+    }
+
+    &__text {
+        margin-top: 15px;
+    }
+}
+@media (max-width:767px) {
+    .blog {
+        &__title {
+            font-size: 30px;
+        }
+        .title_fz30 {
+            font-size: 26px;
+            line-height: 38/26*100%;
+        }
+        &__category {
+            font-size: 16px;
+        }
+        &__date {
+            font-size: 16px;
+        } 
+    }
+    
+    
+}

@@ -1,0 +1,14 @@
+.footer {
+    padding: 51px 0 54px 0;
+    &__icons {
+        text-align: center;
+        font-size: 30px;
+    } 
+    &__copy {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 21/14*100%;
+        margin-top: 26px;
+        text-align: center;
+    }
+}

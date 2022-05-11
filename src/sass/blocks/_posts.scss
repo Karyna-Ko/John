@@ -1,0 +1,79 @@
+.posts {
+    min-height: 396px;
+    background-color: #EDF7FA;
+    &__header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        @media(max-width:320px){justify-content: center;}
+        &-link {
+            color:$secondy-color;
+            &:hover {
+                text-decoration: underline;
+            }
+            @media(max-width:320px){display: none;}
+        }
+    }
+    &__cards {
+        display: flex;
+        @media (max-width:664px) {
+            flex-wrap:wrap;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+}
+
+.card {
+    padding: 24px 27px 20px 23px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 10px rgba(187, 225, 250, 0.25);
+    border-radius: 4px;
+    width: 418px; 
+    min-height: 265px;
+    @media (max-width:664px) {
+        margin: 0 0 32px 0;
+    }
+    &:first-child {
+        margin: 0 20px 0 0;
+        @media (max-width:664px) {
+            margin: 0 0 17px 0;
+        }
+
+    }
+    &__title {
+        font-weight: 700;
+        font-size: 26px;
+        line-height: 38/26*100%;
+    }
+
+    &__info {
+        margin-top: 20px;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 26/18*100%;
+        span {
+            margin: 0 10px;
+        }
+    }
+
+    &__subtitle {
+        margin-top: 17px;
+    }
+}
+
+@media(max-width:320px) {
+    .posts__header-title {
+        font-size: 18px;
+    }
+    .card {
+        &__title {
+            font-size: 22px;
+        }
+        &__info {
+            font-size: 16px;
+        }
+    } 
+
+
+}

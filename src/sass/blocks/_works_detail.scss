@@ -1,0 +1,51 @@
+.work {
+
+    &_detail {
+        h2 {
+            margin-top: 54px;
+            font-weight: 500;
+            font-size: 30px;
+            line-height: 60 / 30 * 100%;
+            @media (max-width:424px) {font-size: 26px;}
+        }
+        h3 {
+            font-weight: 500;
+            font-size: 24px;
+            line-height: 60 / 24 * 100%;
+            @media (max-width:424px) {font-size: 20px;}
+        }
+    }
+}
+
+.work_detail {
+    .container {max-width: 681px;}
+    .grtxt {color: $dark-color;margin-left: 17px;}
+    &__title {
+        font-weight: 700;
+        font-size: 34px;
+        line-height: 50 / 34 * 100%;
+        max-width: 500px;
+    }
+
+    img {
+        margin-top: 30px;
+    }
+    &__year {
+        background-color: $primary-color;
+    }
+}
+.works {
+
+    &__info {
+        margin-top: 25px;
+    }
+}
+@media (max-width:424px){
+    .work_detail {
+        &__title {
+            font-size: 30px;
+            text-align: center;
+        }
+    }
+    
+}
